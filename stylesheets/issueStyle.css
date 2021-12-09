@@ -1,0 +1,21 @@
+.entry-form{
+    padding:40px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    background-color:#f8f9f9;
+    margin:0 auto;
+  }
+  
+  .entry-form .form-success{
+    padding:15px;
+  }
+  
+  @media screen and (min-width: 740px){
+    .entry-form{
+      width:80%;
+    }
+  }
+  
+  .hidden{
+    display:none;
+  }
