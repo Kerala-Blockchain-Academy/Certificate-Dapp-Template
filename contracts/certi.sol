@@ -10,7 +10,7 @@ contract certi {
   }
   
   modifier onlyAdmin {
-      require(msg.sender == admin, "Insuficient privilage");
+      require(msg.sender == admin, "Insufficient privilege");
       _;
   }
   
@@ -35,4 +35,5 @@ contract certi {
                                                     _grade,
                                                     _date);
       }
+      
 }

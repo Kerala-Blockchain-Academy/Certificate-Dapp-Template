@@ -2,8 +2,6 @@
 <html>
 
 <head>
-  <script src="javascripts/jquery.min.js"></script>
-
   <link rel='stylesheet' href='stylesheets/style.css' />
   <link rel='stylesheet' href='stylesheets/searchStyle.css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -16,7 +14,6 @@
     <div class="header-right">
       <a class="active" href="index.html">Home</a>
       <a href="issueCertificate.html">Issue Certificate</a>
-
     </div>
   </div>
 
@@ -24,18 +21,16 @@
     <br /><br />
     <img src="Logo.png" width="115" height="130">
     <br /><br /><br />
-    <button onclick="connectToMetMask()" class="buttonZero" style="text-align: center;"><span>Login </span></button>
+    <button class="buttonZero" style="text-align: center;"><span>Login </span></button>
   </div>
-
 
   <div class="search" style="text-align: center;">
     <input type="text" id="certificateID" name="certificateID" class="searchTerm"
       placeholder="Enter Certificate ID to View">
-    <button onclick="getCertificateDetails()" class="searchButton">
+    <button class="searchButton">
       <i class="fa fa-search"></i>
     </button>
   </div>
-
 
 </body>
 
