@@ -1,112 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate DApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Certificate</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel='stylesheet' href='stylesheets/style.css' />
-  <link rel="stylesheet" href="stylesheets/viewStyle.css">
-</head>
-
-<body>
-  <div class="container pm-certificate-container">
-    <div class="outer-border"></div>
-    <div class="inner-border"></div>
-    <div class="pm-certificate-border col-xs-12">
-      <div class="row pm-certificate-header">
-        <div class="pm-certificate-title cursive col-xs-12 text-center">
-          <h2>Kerala Blockchain Academy</h2>
-        </div>
+  <body>
+    <nav
+      class="navbar is-link title is-4"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/public/certificate.svg" />
+          <span class="ml-2"> Certificate DApp </span>
+        </a>
       </div>
-      <div class="row pm-certificate-body">
-        <div class="pm-certificate-block">
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-              <div class="pm-certificate-name underline margin-0 col-xs-8 text-center">
-                <span id="candidateName" class="pm-name-text bold">
-                  Name: TBD
-                </span>
-              </div>
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-              <div class="pm-earned col-xs-8 text-center">
-                <span class="pm-earned-text padding-0 block cursive">has earned</span>
-                <span id="grade" class="pm-credits-text block bold sans">
-                  Grade: TBD
-                </span>
-              </div>
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-              <div class="col-xs-12"></div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-              <div class="pm-course-title col-xs-8 text-center">
-                <span class="pm-earned-text block cursive">while completing the training course
-                  entitled</span>
-              </div>
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-2">
-                <!-- LEAVE EMPTY -->
-              </div>
-              <div class="pm-course-title underline col-xs-8 text-center">
-                <span id="courseName" class="pm-credits-text block bold sans">
-                  Course: TBD
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col pm-certified">
-                <span id="certificateID" class="pm-credits-text block bold sans">Certificate ID: TBD
-                </span>
-              </div>
-              <div class="col pm-certified text-end">
-                <span id="date" class="pm-credits-text block sans">Date of Completion: TBD</span>
-                <span class="pm-credits-text block sans">Place: Trivandrum</span><br />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="row">
-            <div class="pm-certificate-footer">
-              <br /><br />
-              <div class="col pm-certified text-end">
-                <span class="bold block">(sd/-)</span>
-                <span class="bold block">Director</span>
+      <div class="navbar-end">
+        <a class="navbar-item mx-2" href="/issueCertificate.html">
+          Issue Certificate
+        </a>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-2 my-6">KERALA BLOCKCHAIN ACADEMY</p>
+                  <p class="subtitle my-2">This is to certify that</p>
+                  <p class="title my-4" id="candidateName">{{name}}</p>
+                  <p class="subtitle my-2">has successfully completed</p>
+                  <p class="title is-4 my-4" id="courseName">{{course}}</p>
+                  <p class="subtitle my-2">with</p>
+                  <p class="title is-4 my-4" id="grade">{{grade}} Grade</p>
+                  <div class="columns mt-6 mb-4">
+                    <div class="column ml-5">
+                      <p class="subtitle has-text-left">
+                        <span id="certificateID">Certificate ID: {{id}}</span>
+                        <br />
+                        <span id="date">Date: {{date}}</span>
+                        <br />
+                        Place: Thiruvananthapuram
+                      </p>
+                    </div>
+                    <div class="column mr-5">
+                      <p class="subtitle has-text-right">
+                        (sd/-)
+                        <br />
+                        Director
+                        <br />
+                        KBA
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
-
+    </section>
+  </body>
 </html>

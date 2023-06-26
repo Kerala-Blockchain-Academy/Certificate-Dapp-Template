@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate DApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
 
-<head>
-    <link rel='stylesheet' href='stylesheets/style.css' />
-    <link rel='stylesheet' href='stylesheets/searchStyle.css' />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <div class="header">
-        <a href="/" class="logo">Certificate Dapp</a>
-        <div class="header-right">
-            <a class="active" href="index.html">Home</a>
-            <a href="issueCertificate.html">Issue Certificate</a>
+  <body>
+    <nav
+      class="navbar is-link title is-4"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/public/certificate.svg" />
+          <span class="ml-2"> Certificate DApp </span>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item mx-2" href="/issueCertificate.html">
+          Issue Certificate
+        </a>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container has-text-centered">
+        <img src="/public/certificate.svg" width="256" />
+        <h3 class="title is-4">Search Certificate Details</h3>
+        <div class="field is-grouped mt-6">
+          <input
+            class="input is-large mr-4"
+            type="text"
+            id="certificateID"
+            name="certificateID"
+            placeholder="Enter Certificate ID"
+          />
+          <div class="control">
+            <button class="button is-link is-large">Submit</button>
+          </div>
         </div>
-    </div>
-    <div style="text-align:center;">
-        <br /><br />
-        <img src="Logo.png" width="225" height="225">
-        <br /><br /><br />
-        <button class="buttonZero" style="text-align: center;">
-            <span>Login</span>
-        </button>
-    </div>
-    <div class="search wrap" style="text-align: center;">
-        <input type="text" id="certificateID" name="certificateID" class="searchTerm"
-            placeholder="Enter Certificate ID to View">
-        <button class="searchButton">
-            <i class="fa fa-search"></i>
-        </button>
-    </div>
-</body>
-
+      </div>
+    </section>
+  </body>
 </html>
