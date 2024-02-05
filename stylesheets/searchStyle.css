@@ -7,9 +7,9 @@ body {
 
 .search {
   text-align: center;
-  width: 100%;
-  position: relative;
   display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .searchTerm {
@@ -29,14 +29,12 @@ body {
 }
 
 .searchButton {
-  width: 40px;
+  width: 100px;
   height: 36px;
   border: 1px solid #00B4CC;
   background: #00B4CC;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
   font-size: 20px;
 }
 
@@ -48,4 +46,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.text-box-with-border {
+  border: 1px solid #007bff; /* Example border color */
+  padding: 5px; /* Optional: Add padding for better appearance */
 }

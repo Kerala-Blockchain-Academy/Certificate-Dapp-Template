@@ -7,7 +7,14 @@ body {
 }
 
 .entry-form {
-  padding: 40px;
+  padding: 60px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9f9;
+  margin: 0 auto; 
+}
+.entry-form1{
+  padding: 40 px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f8f9f9;
@@ -30,4 +37,10 @@ body {
 
 .form-group {
   padding-bottom: 25px;
+  display: block;
+}
+
+.form-ctrl{
+  width: 500px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
 }

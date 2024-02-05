@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='stylesheets/style.css' />
+  <link rel='stylesheet' href='stylesheets/issueStyle.css' />
+  <script>
+    window.onload=()=>{
+      document.getElementById("candidateName").innerHTML = localStorage.getItem("candidateName");
+      document.getElementById("grade").innerHTML = localStorage.getItem("grade");
+      document.getElementById("courseName").innerHTML = localStorage.getItem("courseName");
+      document.getElementById("certificateID").innerHTML = localStorage.getItem("certificateID");
+      document.getElementById("date").innerHTML = localStorage.getItem("date");
+      let date=localStorage.getItem("date")
+      console.log(date);
+    }
+  </script>
+</head>
+<body>
+    <div class="entry-form">
+        <div class="entry-form1">
+            
+        <p id="certificateID" style="float: right;">Certificate ID: #TBD</p><br/>
+       
+        <p style="text-align: center ;font-size: 18px;font-weight: bold;">Kerala Blockchain Academy</p><br/>
+        <div style="display: flex; justify-content: center; align-items: center;"><img src="Logo.png" width="200" height="200"></div>
+        <p style="text-align: center ;font-size: 18px">This is to certify that
+            <span id="candidateName" style="font-size: 18px;font-weight: bold;"> TBD</span><br></br>
+             has successfully completed 
+             <span id="courseName" style="font-size: 18px;font-weight: bold;"> TBD</span><br></br>
+              with <span id="grade" style="font-size: 18px;font-weight: bold;">TBD</span> on <span id="date" style="font-size: 18px;font-weight: bold;">TBD</span></p>
+        </div>
+        </div>
+</body>
+</html>

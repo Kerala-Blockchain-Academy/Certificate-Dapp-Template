@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="/app.js"></script>
     <link rel='stylesheet' href='stylesheets/style.css' />
     <link rel='stylesheet' href='stylesheets/searchStyle.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -10,25 +11,32 @@
 <body>
     <div class="header">
         <a href="/" class="logo">Certificate Dapp</a>
-        <div class="header-right">
+        <div class="right-corner-component">
             <a class="active" href="index.html">Home</a>
             <a href="issueCertificate.html">Issue Certificate</a>
         </div>
     </div>
-    <div style="text-align:center;">
+    <div style="text-align:center">
         <br /><br />
-        <img src="Logo.png" width="225" height="225">
+        <img src="Logo.png" width="200" height="200">
         <br /><br /><br />
-        <button class="buttonZero" style="text-align: center;">
+        <!-- <button onclick="connectToMetamask()" class="buttonZero" style="text-align: center;">
             <span>Login</span>
-        </button>
+        </button> -->
     </div>
-    <div class="search wrap" style="text-align: center;">
-        <input type="text" id="certificateID" name="certificateID" class="searchTerm"
+    <div class="search" >
+        <input type="text" id="certificateID" name="certificateID" class="text-box-with-border"
             placeholder="Enter Certificate ID to View">
-        <button class="searchButton">
-            <i class="fa fa-search"></i>
+        <button onclick="redirectToPage()" class="searchButton">
+            Search
         </button>
+        <script>
+            function redirectToPage() {
+            window.location.href = "viewCertificate1.html";
+        }
+
+            
+        </script>
     </div>
 </body>
 

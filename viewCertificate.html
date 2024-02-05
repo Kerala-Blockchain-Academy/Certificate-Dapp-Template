@@ -2,12 +2,22 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <title>Certificate</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel='stylesheet' href='stylesheets/style.css' />
   <link rel="stylesheet" href="stylesheets/viewStyle.css">
+  <script>
+    window.onload=()=>{
+      document.getElementById("candidateName").innerHTML = localStorage.getItem("candidateName");
+      document.getElementById("grade").innerHTML = localStorage.getItem("grade");
+      document.getElementById("courseName").innerHTML = localStorage.getItem("courseName");
+      document.getElementById("certificateID").innerHTML = localStorage.getItem("certificateID");
+      document.getElementById("date").innerHTML = localStorage.getItem("date");
+    }
+  </script>
 </head>
 
 <body>

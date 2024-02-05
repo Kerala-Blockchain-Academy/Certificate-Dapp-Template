@@ -90,3 +90,14 @@
   opacity: 1;
   right: 0;
 }
+.right-corner-component {
+  position: absolute;
+  top: 1;
+  right: 0;
+  /* Optional: Add padding or other styles as needed */
+}
+.right-component {
+ 
+  float: right;
+  /* Optional: Add padding or other styles as needed */
+}
